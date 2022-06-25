@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local And Global Variable's</title>
+</head>
+<body>
+  <script>
+    // {
+
+    //   const a=150;
+    //   // document.write(a)
+    //   var b=130;
+    //   document.write(b);
+    //   document.write("<br>")
+    //   let  c =120;
+    //   document.write(c);
+    //   document.write(a)
+    // }
+    // document.write("<br>")
+    //   // document.write(c);
+    //   document.write(b);
+    //   document.write("<br>")
+    // // document.write(a);
+
+//   Local an gloabal scope
+
+// var x=15// global scope 
+
+function my()
+    {
+        window.x=15;         // Local variable scope
+        document.write(x);
+      }
+   
+       my()
+      document.write(x);
+
+  </script>
+  
+</body>
+</html>

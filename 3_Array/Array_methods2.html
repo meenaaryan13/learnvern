@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array methods </title>
+</head>
+<body>
+  <script>
+    // Array fill methods 
+    document.write("<h1>Fill():</h1>");
+    const name=["Chetan","Praveen","Rahul"];
+    // var name_change1=name.fill("Aryan"); //Simple typee
+    // console.log(name_change);
+    var name_change2=name.fill("Aryan",0,1) //index set
+    document.write(name_change2);  
+    //Array from method 
+    document.write("<h1>From():</h1>");
+    var A=["Hello"];
+    // var b=A.from(); error
+    var b=Array.from(A);
+    document.write(b);
+
+    //Array Filter() Method
+    document.write("<h1>Filtter():</h1>");
+
+    var fill=[3,31,9,18];
+
+    var x= function(value) {
+      return value>10;
+    } 
+  //  var y=x.filter();
+   document.write(fill.filter(x));
+
+   document.write("<h1>ForEach():</h1>");
+   var forEach_Array=['A','b','c'];
+  //  forEach(element => console.log(element));
+  //  document.write(c)
+  
+  // Array Findindex() method 
+  document.write("<h1>Findindex():</h1>");
+  var fill1=[3,31,9,18];
+  var fill2=fill1.findIndex(x=>x>10)
+  document.write(fill2);
+
+
+    
+    
+
+    
+
+  </script>
+
+</body>
+</html>

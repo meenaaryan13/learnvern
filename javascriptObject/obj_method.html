@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Method</title>
+</head>
+<body>
+  <script>
+
+    //1. Assiagn method 
+    var obj1={
+      prop1:1,
+      prop2:2,
+      prop3:3
+    }
+    const obj2={
+      prop4:4,
+      prop5:5,
+      prop6:6
+    }
+
+    var obj3=Object.assign({prop2:7,prop4:8},obj1);
+    var obj4=({prop4:16,prop7:49},obj2);
+    // console.log(obj3);
+    // document.write(obj3);
+
+
+    //2. Object create method
+    
+    function my()
+    {
+      this.name="aryan"
+    };
+    function my2()
+    {
+      //  this.call(my());
+    }
+
+    my2.prototype=Object.create(my.prototype);
+    const a=new my2();
+
+    // console.log(a);
+
+    // 3. Object Freez
+
+    const obj={
+      age:20
+    }
+
+    const obj0=Object.freeze(obj)
+    obj0.age=21
+    // console.log(obj0)
+
+    // 4. Object is() method 
+
+    const Object1={
+         age:20
+    }
+    const Object2={
+      a:20
+    }
+
+    // console.log(Object.is(Object1.age,Object2.a));
+    
+
+    // 5. Object Values method 
+    const x={
+           a:5,
+           b:6
+    }
+    console.log(Object.values(x));
+
+ 
+  </script>
+</body>
+</html>

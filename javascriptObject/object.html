@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Types of JavaScript Object </title>
+</head>
+<body>
+   <h1>Litral object </h1>
+   <script>
+     var object={   //litrial javaSCript object 
+          property1:1,
+          property2:2,
+          property3:3
+     };
+    //  document.writeln("THe litrial object value ",object.property1 ,+" "+ object.property2 ,+" "+ object.property3 );
+
+     //By creating instance of an Object 
+
+    var objectName = new Array();
+      objectName.first=1;
+      objectName.second=2;
+      objectName.third=3;
+
+    for(value in objectName)
+    {
+      // document.write(objectName[value]);
+    }
+
+    // Object constructer
+
+  //  function my(id,name,branch)
+  //  {
+  //    this.id=id;
+  //    this.name=name;
+  //    this.branch=branch;
+  //  }
+
+  //  var e=new my(1,"Aryan","Bca");
+  //  document.writeln(e.id ,'&nbsp',e.name ,'&nbsp', e.branch);
+
+  // Object Method 
+
+
+   function my(id,name,salery)
+   {
+     this.id=id;
+     this.name=name;
+     this.salery =salery;
+
+     this.updateSalery=updateSalery;
+
+     function updateSalery(newselery)  
+     {
+       this.salery=newselery;
+     }
+
+   }
+
+
+   var e=new my(1,"Aryan",4000);
+   document.writeln(e.id ,'&nbsp',e.name ,'&nbsp', e.salery);
+
+   e.updateSalery(5000);
+   document.writeln(e.id ,'&nbsp',e.name ,'&nbsp', e.salery);
+
+
+   </script>
+      
+
+</body>
+</html>

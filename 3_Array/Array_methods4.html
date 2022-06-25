@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array methods </title>
+</head>
+<body>
+  <script>
+    //Array of methods
+     var a=[1,2,3,4,"Aryan"]
+     document.write(a,"<br>");
+    
+    //Array pop() methods
+    var b=a.pop();
+
+    document.write(b,"<br>");
+    document.write(a,"<br>");
+    // Array push() methods 
+    var c=a.push("Meena");
+    document.write(c,"<br>");
+    document.write(a,"<br>");
+
+    var c=a.reverse("Meena");
+    document.write(c,"<br>");
+    document.write(a,"<br>");
+
+  
+  
+    document.write(" Reduce Method<br> ")
+    var x=[1,2,3,4,5];
+    var y=x.reduce(function(a,b){
+        return a+b;
+    });
+
+    document.write(y);
+   
+  //   document.write(" <br>Some Method<br> ")
+  //  var c=(c)=>c%2==0;
+  //   var z=x.some(c);
+  //   document.write(z);
+
+  
+  document.write(" Shift  Method<br> ");
+  
+  var y=x.shift();
+  document.write(x,"<br>");
+  document.write(y);
+
+  document.write("<br> Slice   Method<br> ");
+
+  // var m=x.slice(3);
+  var m=x.slice(0,-1)
+  document.write(m);
+
+
+
+
+
+  </script>
+  
+</body>
+</html>

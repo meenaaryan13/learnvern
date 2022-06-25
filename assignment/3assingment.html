@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Assignment </title>
+</head>
+
+<body>
+
+  <p id="demo"></p>
+  <script>
+
+    /* 1. if...else condition */
+
+    // var x=true;
+    var x = false;
+    if (x == true) {
+      // document.writeln("the value is :",x);
+    }
+    else {
+      //  document.writeln("the value is :",x);
+    }
+
+    /* 2. print today if..else..if  */
+
+    var b = ["sunday", "monday", "tuesday", "wednesday", "thusday", "friday", "saturday"];
+
+    // const d = new Date();
+    // let a = b[d.getDay()];
+    // document.getElementById("demo").innerHTML = day;
+    // document.write = day;    is not correct way 
+
+    // if(a=="monday")
+    // {
+    //   document.write("Today is Monday");
+    // }
+    // else if(a=="tuesday")
+    // {
+    //   document.write("Today is tuesday ");
+    // }
+    // else if(a=="wednesday")
+    // {
+    //   document.write("Today is wednesday ");
+    // }
+    // else if(a=="thusday")
+    // {
+    //   document.write("Today is thusday ");
+    // }
+    // else if(a=="friday")
+    // {
+    //   document.write("Today is friday ");
+    // }
+    // else if(a=="saturday")
+    // {
+    //   document.write("Today is saturday ");
+    // }
+    // else if (a=="sundauy")
+    // {
+    //   document.write("defult day is sunday ");
+    // }
+
+
+    // 3. switch case 
+    // switch (a) {
+    //   case "monday": document.write("today is monday");
+    //     break;
+    //   case "tuesday": document.write("today is tuesday ");
+    //     break;
+    //   case "wednesday": document.write("today is wednesday");
+    //     break;
+    //   case "thusday":document.write("today is thusday");
+    //     break;
+    //   case "friday": document.write("today is friday");
+    //     break;
+    //   case "saturday": document.write("today is saturday");
+    //     break;
+    //   case "sunday": document.write("today is sunday");
+    //   default: document.write("today is default ");
+    //     break;
+    // }
+    
+// 4. FOR LOOP //WHILE LOOP //DO..WHILE 
+    
+for(var i=0;i<b.length;i++)
+{
+  // document.writeln(b[i]);
+}
+
+// 5. display name using function 
+      
+  function functionname()
+  {
+    // alert("ARyan MEena ji");
+  }
+
+  functionname();
+
+  // 6. find minimum and maximum number an array 
+  var y=[3,13,9,18]
+
+  let z=Math.max.apply(null,y); // maximumn 
+  // document.write(z);
+
+  let c =Math.min.apply(null,y);//minimum
+  // document.write(c);
+
+  // 7. Bind object 
+
+  let person = {
+    name: 'John Doe',
+    getName: function() {
+        document.write(this.name);
+    }
+};
+
+setTimeout(person.getName, 1000);
+
+  </script>
+
+</body>
+
+</html>

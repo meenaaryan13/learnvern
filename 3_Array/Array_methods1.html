@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array_Methods</title>
+</head>
+<body>
+       <script>
+       var Gname=["shyam","ram","shankar","bhole"];
+       var Aname=["lion","tiger","elephant","fox","bull"];
+       var num=[25,30,35,40,50];
+       var numbers=[2,4,6,8];
+       function check(value)
+       {
+         return value>20;
+       }
+
+       // Two Array concate() method  in one array 
+       document.write("<h1> concate() :<br> </h1>");
+       var concate=Gname.concat(Aname);
+       document.writeln(concate);
+
+       // Array Copywithin() method
+       document.write("<h1>copyWithin() :<br></h1>")
+       var copywit=Aname.copyWithin(0,1,4);
+       document.writeln(copywit);
+
+      // Arrya entries method()
+      document.write("<h1>entries():<br></h1>")
+
+      var entries=Gname.entries();
+      for(value of entries)
+      {
+         document.writeln(value,"<br>");
+      }
+      
+      // Arrya every() method 
+      document.write("<h1>every():<br></h1>")
+
+      document.write(" Every element in this array is greter then >20 :",num.every(check));
+
+               // Arrya flatmap() method 
+      document.write("<h1>flatmap():<br></h1>")
+      var flatm=numbers.flatMap(x => [x/2]);
+      document.write(flatm);
+
+       </script>     
+  
+
+</body>
+</html>

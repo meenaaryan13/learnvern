@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array methods </title>
+</head>
+<body>
+        <script>
+          //includes  Method 
+          document.write("<h3>Includes()<br></h3>"); 
+          var arr=["Aryan","Shubham","Ankit"];
+          var includes=arr.includes("Shubham");
+          document.write(includes);
+
+          //indexof() method 
+          document.write("<h3><br>indexof()<br></h3>");
+
+          var indexof=arr.indexOf("Aryan");
+          document.write(indexof,"<br>");
+
+          
+          //isArray() method 
+          document.write("<h3><br>isArrya()<br></h3>");
+           var isArray=Array.isArray(arr);
+           document.write(isArray);
+
+            //join() method 
+          document.write("<h3><br>join()<br></h3>");
+           var join=arr.join('++');
+           document.write(join);
+
+          //Keys() method 
+          document.write("<h3><br>Keys()<br></h3>");
+           var keys=arr.keys();
+           document.write(keys,"<br>");
+          for(k of keys)
+          {
+            document.write(k,"<br>")
+          }
+
+
+          //lastindexof() method 
+          document.write("<h3><br>lastindexof()<br></h3>");
+           var lastIndexOf=arr.lastIndexOf("Ankit");
+           document.write(lastIndexOf);
+
+           //map() method 
+          document.write("<h3><br>map()<br></h3>");
+          var map=[2,4,6,8]
+           var map=map.map(x=>x*2);
+           document.write(map);
+        </script>
+</body>
+</html>
